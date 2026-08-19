@@ -1,0 +1,10 @@
+{
+  "id": "better-note-width",
+  "name": "Better Note Width",
+  "version": "0.1.0",
+  "minAppVersion": "1.0.0",
+  "description": "Set a global readable line length with regex-based full-width exceptions.",
+  "author": "Dwi Elfianto",
+  "authorUrl": "https://github.com/delfianto",
+  "isDesktopOnly": false
+}

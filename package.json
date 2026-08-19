@@ -1,0 +1,37 @@
+{
+  "name": "better-note-width",
+  "version": "0.1.0",
+  "description": "Set a global readable line length in Obsidian with regex-based full-width exceptions.",
+  "keywords": [
+    "line-width",
+    "obsidian",
+    "obsidian-plugin"
+  ],
+  "license": "MIT",
+  "author": "Dwi Elfianto",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vp build --watch",
+    "build": "vp build",
+    "check": "vp fmt --check -c .oxfmtrc.json && vp lint -c .oxlintrc.json",
+    "lint": "vp lint -c .oxlintrc.json",
+    "lint:fix": "vp lint -c .oxlintrc.json --fix",
+    "format": "vp fmt --write -c .oxfmtrc.json",
+    "type-check": "bun x tsc --noEmit",
+    "test": "vp test run",
+    "test:coverage": "vp test run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@voidzero-dev/vite-plus-core": "^0.2.4",
+    "builtin-modules": "^5.3.0",
+    "obsidian": "^1.13.1",
+    "typescript": "^6.0.3",
+    "vite-plus": "^0.2.4",
+    "vitest": "4.1.10"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@^0.2.4"
+  }
+}

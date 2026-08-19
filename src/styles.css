@@ -1,0 +1,13 @@
+/* Disable width animation so switching between a readable and full-width note is immediate. */
+.workspace-leaf-content.better-note-width-readable .cm-sizer,
+.workspace-leaf-content.better-note-width-readable .cm-content,
+.workspace-leaf-content.better-note-width-readable .markdown-preview-sizer,
+.workspace-leaf-content.better-note-width-full .cm-sizer,
+.workspace-leaf-content.better-note-width-full .cm-content,
+.workspace-leaf-content.better-note-width-full .markdown-preview-sizer {
+  transition: max-width 0s !important;
+}
+
+.better-note-width-invalid-pattern {
+  border-color: var(--text-error) !important;
+}

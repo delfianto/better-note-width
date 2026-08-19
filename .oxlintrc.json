@@ -1,0 +1,57 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "perf": "error",
+    "style": "error"
+  },
+  "rules": {
+    "sort-imports": ["error", { "ignoreCase": true }],
+    "import/first": "error",
+    "import/no-duplicates": "error",
+    "import/no-cycle": "error",
+    "import/no-self-import": "error",
+    "import/consistent-type-specifier-style": ["error", "prefer-inline"],
+    "unicorn/no-null": "off",
+    "unicorn/filename-case": ["error", { "cases": { "kebabCase": true, "pascalCase": true } }],
+    "no-new": "off",
+    "no-useless-constructor": "off",
+    "no-ternary": "off",
+    "no-continue": "off",
+    "no-magic-numbers": "off",
+    "curly": ["error", "multi-line"],
+    "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }],
+    "max-params": ["error", { "max": 5 }],
+    "typescript/parameter-properties": "off",
+    "import/prefer-default-export": "off",
+    "import/no-named-export": "off",
+    "import/group-exports": "off",
+    "import/exports-last": "off",
+    "init-declarations": "off",
+    "sort-keys": "off",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "capitalized-comments": "off",
+    "id-length": "off",
+    "max-lines": "off",
+    "max-lines-per-function": "off",
+    "max-statements": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.config.mts", "*.config.ts", "scripts/**"],
+      "rules": {
+        "import/no-nodejs-modules": "off"
+      }
+    },
+    {
+      "files": ["test/**"],
+      "rules": {
+        "unicorn/no-useless-undefined": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["dist", "coverage", "node_modules", "test-vault", "*.md"]
+}

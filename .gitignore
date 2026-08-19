@@ -1,0 +1,22 @@
+# dependencies
+node_modules
+
+# tests
+coverage
+
+# build output
+dist
+main.js
+*.js.map
+
+# Obsidian plugin data
+data.json
+
+# local development
+/.envrc
+test-vault/.obsidian/plugins/better-note-width
+test-vault/.obsidian/workspace
+test-vault/.obsidian/workspace.json
+
+# macOS
+*.DS_Store
