@@ -20,3 +20,4 @@ test-vault/.obsidian/workspace.json
 
 # macOS
 *.DS_Store
+.vitest/

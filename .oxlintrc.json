@@ -22,6 +22,8 @@
     "no-ternary": "off",
     "no-continue": "off",
     "no-magic-numbers": "off",
+    // Keep declarations separate, matching the existing TypeScript style.
+    "one-var": ["error", "never"],
     "curly": ["error", "multi-line"],
     "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }],
     "max-params": ["error", { "max": 5 }],
