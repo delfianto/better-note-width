@@ -2,8 +2,8 @@ import { compileRules, matchingRule } from "src/rule-matcher";
 
 describe("full-width rule matching", () => {
   const rules = [
-    { name: "Readmes", pattern: "(^|/)README\\.md$" },
-    { name: "Agent files", pattern: "(^|/)(CLAUDE|AGENTS)\\.md$" },
+    { name: "Readmes", pattern: String.raw`(^|/)README\.md$` },
+    { name: "Agent files", pattern: String.raw`(^|/)(CLAUDE|AGENTS)\.md$` },
   ];
 
   it("matches file names at the root and in folders", () => {

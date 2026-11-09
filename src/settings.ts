@@ -17,9 +17,9 @@ export const DEFAULT_SETTINGS: BetterNoteWidthSettings = {
   unit: "ch",
   caseSensitive: false,
   fullWidthRules: [
-    { name: "Claude instructions", pattern: "(^|/)CLAUDE\\.md$" },
-    { name: "Agent instructions", pattern: "(^|/)AGENTS\\.md$" },
-    { name: "README files", pattern: "(^|/)README\\.md$" },
+    { name: "Claude instructions", pattern: String.raw`(^|/)CLAUDE\.md$` },
+    { name: "Agent instructions", pattern: String.raw`(^|/)AGENTS\.md$` },
+    { name: "README files", pattern: String.raw`(^|/)README\.md$` },
   ],
 };
 

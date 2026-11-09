@@ -14,7 +14,7 @@ describe("settings", () => {
       unit: "px",
       caseSensitive: true,
       fullWidthRules: [
-        { name: "Canvas", pattern: "\\.canvas$" },
+        { name: "Canvas", pattern: String.raw`\.canvas$` },
         { name: 42, pattern: "invalid" },
       ],
     });
@@ -23,7 +23,7 @@ describe("settings", () => {
       width: 900,
       unit: "px",
       caseSensitive: true,
-      fullWidthRules: [{ name: "Canvas", pattern: "\\.canvas$" }],
+      fullWidthRules: [{ name: "Canvas", pattern: String.raw`\.canvas$` }],
     });
   });
 
